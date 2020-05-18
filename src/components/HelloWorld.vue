@@ -14,6 +14,13 @@
 
       <div class="col-4">
         <h2>Skills</h2>
+        <i class="fab fa-html5 fa-4x m-1"></i>
+        <i class="fab fa-css3-alt fa-4x m-1"></i>
+        <i class="fab fa-js fa-4x m-1"></i>
+        <i class="fab fa-vuejs fa-4x m-1"></i>
+        <i class="fab fa-node-js fa-4x m-1"></i>
+        <img src="https://img.icons8.com/ios-filled/50/000000/c-sharp-logo.png"/>
+        <i class="fab fa-github fa-4x m-1"></i>
       </div>
 
 
