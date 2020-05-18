@@ -1,6 +1,6 @@
 <template>
 <div>
-      <div class="row no-gutters bg-dark">
+      <div class="row no-gutters my-Dark">
         <div class="col-6 offset-3">
           <div class="text-center bColor my-auto text-white">
             <h1>Derrick Wood</h1>
@@ -9,56 +9,22 @@
           </div>
         </div>
       </div>
-    <v-row class="text-center">
-      <v-col cols="12">
-        <!-- <v-img
-          :src="require('../assets/logo.svg')"
-          class="my-3"
-          contain
-          height="200"
-        /> -->
-      </v-col>
+    <div class="row text-center">
 
-      <v-col class="mb-4">
-        <!-- <h1 class="display-2 font-weight-bold mb-3">
-          Welcome to Vuetify
-        </h1> -->
 
-        <p class="subheading font-weight-regular">
-          For help and collaboration with other Vuetify developers,
-          <br>please join our online
-          <a
-            href="https://community.vuetifyjs.com"
-            target="_blank"
-          >Discord Community</a>
+      <div class="col-4">
+        <h2>Skills</h2>
+      </div>
+
+
+      <div class="col-4">
+        <h1>About Me</h1>
+        <img class="my-Pic m-2" src="https://media-exp1.licdn.com/dms/image/C5603AQEAL1BjiwdP5w/profile-displayphoto-shrink_200_200/0?e=1594857600&v=beta&t=RmSFPjHn2IEmUO1-2Cdev19tSUD5yuYm-Ygv854AW5A">
+        
+        <p class="subheading font-weight-regular m-3">
+          A U.S. Army veteran & Full Stack Software Developer with a passion for solving problems and developing clean, modern software. Proficient with the most up to date software development tools and technologies. Proven leadership skills, hard working ethic, and a strong technical aptitude.
         </p>
-      </v-col>
 
-      <v-col
-        class="mb-5"
-        cols="12"
-      >
-        <h2 class="headline font-weight-bold mb-3">
-          What's next?
-        </h2>
-
-        <v-row justify="center">
-          <a
-            v-for="(next, i) in whatsNext"
-            :key="i"
-            :href="next.href"
-            class="subheading mx-3"
-            target="_blank"
-          >
-            {{ next.text }}
-          </a>
-        </v-row>
-      </v-col>
-
-      <v-col
-        class="mb-5"
-        cols="12"
-      >
         <h2 class="headline font-weight-bold mb-3">
           Important Links
         </h2>
@@ -74,29 +40,13 @@
             {{ link.text }}
           </a>
         </v-row>
-      </v-col>
+      </div>
 
-      <v-col
-        class="mb-5"
-        cols="12"
-      >
-        <h2 class="headline font-weight-bold mb-3">
-          Ecosystem
-        </h2>
-
-        <v-row justify="center">
-          <a
-            v-for="(eco, i) in ecosystem"
-            :key="i"
-            :href="eco.href"
-            class="subheading mx-3"
-            target="_blank"
-          >
-            {{ eco.text }}
-          </a>
-        </v-row>
-      </v-col>
-    </v-row>
+      <div class="col-4">
+        <h2>Connect</h2>
+      </div>
+     
+    </div>
 </div>
 </template>
 
@@ -161,6 +111,14 @@
 
 <style scoped>
 .bColor{
-  height: 80vh;
+  height: 70vh;
+}
+
+.my-Dark{
+  background-color: #1e1e1e;
+}
+
+.my-Pic{
+  border-radius: 50%;
 }
 </style>
