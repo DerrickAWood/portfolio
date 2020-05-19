@@ -7,7 +7,7 @@
       color="dark"
       dark
     >
-       <v-btn class="mx-2" fab dark color="teal">
+       <v-btn class="mx-2 hover" fab dark color="teal">
       <v-icon dark>mdi-format-list-bulleted-square</v-icon>
     </v-btn>
     </v-app-bar>
@@ -32,3 +32,10 @@ export default {
   }),
 };
 </script>
+
+<style scoped>
+.hover:hover{
+  transform: scale(1.3);
+  cursor: pointer;
+}
+</style>

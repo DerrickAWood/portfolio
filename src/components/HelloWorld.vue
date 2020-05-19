@@ -14,12 +14,18 @@
 
       <div class="col-4">
         <h2>Skills</h2>
+        <div class="row justify-content-center">
         <i class="fab fa-html5 fa-4x m-1"></i>
         <i class="fab fa-css3-alt fa-4x m-1"></i>
+        </div>
+        <div class="row justify-content-center">
         <i class="fab fa-js fa-4x m-1"></i>
         <i class="fab fa-vuejs fa-4x m-1"></i>
+        </div>
+        <div class="row justify-content-center">
         <i class="fab fa-node-js fa-4x m-1"></i>
         <img src="https://img.icons8.com/ios-filled/50/000000/c-sharp-logo.png"/>
+        </div>
         <i class="fab fa-github fa-4x m-1"></i>
       </div>
 
@@ -33,31 +39,39 @@
         </p>
 
         <h2 class="headline font-weight-bold mb-3">
-          Important Links
-        </h2>
+          <button type="button" class="btn btn-secondary btn-lg hover" data-toggle="modal" data-target=".bd-example-modal-xl">View Resume</button>
 
-        <v-row justify="center">
-          <a
-            v-for="(link, i) in importantLinks"
-            :key="i"
-            :href="link.href"
-            class="subheading mx-3"
-            target="_blank"
-          >
-            {{ link.text }}
-          </a>
-        </v-row>
+        <div class="modal fade bd-example-modal-xl" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-xl">
+            <button type="button" class="close white hover" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+            <div class="modal-content">
+              
+          <img src="https://media-exp1.licdn.com/dms/image/C562DAQEd-6dLWBZAjQ/profile-treasury-document-images_1280/1?e=1589947200&v=beta&t=pYle2MRRlt0UcA0XIOE6scbA4kDX_kbQ6iL9wleQwAo" alt="">
+      
+    </div>
+  </div>
+</div>
+        </h2>
       </div>
 
       <div class="col-4">
         <h2>Connect</h2>
+        <img @click="linkedIn()" class="hover" src="https://img.icons8.com/officel/50/000000/linkedin.png"/>
+        <img @click="gitHub()" class="hover" src="https://img.icons8.com/nolan/64/github.png"/>
+        <img @click="email()" class="hover" src="https://img.icons8.com/nolan/64/email.png"/>
+        <img @click="cell()" class="hover" src="https://img.icons8.com/nolan/64/phone.png"/>
       </div>
      
     </div>
+    <Projects></Projects>
 </div>
 </template>
 
 <script>
+import Projects from "../components/Projects.js"
+import swal from 'sweetalert'
   export default {
     name: 'HelloWorld',
 
@@ -113,6 +127,23 @@
         },
       ],
     }),
+    methods:{
+      linkedIn(){
+        window.open("https://www.linkedin.com/in/derrickawood/")
+      },
+      gitHub(){
+        window.open("https://github.com/DerrickAWood")
+      },
+      email(){
+        swal("dwood_1994@yahoo.com");
+      },
+      cell(){
+        swal("(661) 912-4085");
+      }
+    },
+    components:{
+      Projects
+    }
   }
 </script>
 
@@ -127,5 +158,10 @@
 
 .my-Pic{
   border-radius: 50%;
+}
+
+.hover:hover{
+  transform: scale(1.3);
+  cursor: pointer;
 }
 </style>
