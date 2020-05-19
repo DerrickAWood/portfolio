@@ -1,16 +1,6 @@
 
 <template>
-  <div>
-    <div class="row no-gutters my-Dark">
-        <div class="col-6 offset-3">
-          <div class="text-center bColor my-auto text-white">
-            <h1>Derrick Wood</h1>
-            <hr class="white">
-            <h1>Software Developer</h1>
-          </div>
-        </div>
-      </div>
-    <div class="row text-center">
+  <div class="bColor my-Dark">
   </div>
 </template>
 
@@ -23,5 +13,12 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
+.bColor{
+  height: 60vh;
+}
+
+.my-Dark{
+  background-color: #1e1e1e;
+}
 </style>

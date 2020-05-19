@@ -70,7 +70,7 @@
 </template>
 
 <script>
-import Projects from "../components/Projects.js"
+import Projects from "../components/Projects"
 import swal from 'sweetalert'
   export default {
     name: 'HelloWorld',
