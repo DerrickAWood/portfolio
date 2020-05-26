@@ -1,8 +1,8 @@
 <template>
 <div>
-      <div class="row no-gutters my-Dark">
-        <div class="col-6 offset-3">
-          <div class="text-center bColor my-auto text-white">
+      <div class="row no-gutters my-Dark d-flex justify-content-center bColor ">
+        <div class="col-6 align-self-center">
+          <div class="text-center my-auto text-white mb-5">
             <h1>Derrick Wood</h1>
             <hr class="white">
             <h1>Software Developer</h1>
@@ -48,7 +48,7 @@
         </button>
             <div class="modal-content">
               
-          <img src="https://media-exp1.licdn.com/dms/image/C562DAQEd-6dLWBZAjQ/profile-treasury-document-images_1280/1?e=1589947200&v=beta&t=pYle2MRRlt0UcA0XIOE6scbA4kDX_kbQ6iL9wleQwAo" alt="">
+          <img src="https://media-exp1.licdn.com/dms/image/C562DAQEd-6dLWBZAjQ/profile-treasury-document-cover-images_800/0?e=1590544800&v=beta&t=S2lcZgZxXnh8DrujffO-7-LWF6Y8ezqgbRRr0tL9Z1A" alt="">
       
     </div>
   </div>
@@ -65,12 +65,12 @@
       </div>
      
     </div>
-    <Projects></Projects>
+      <Projects></Projects>
 </div>
 </template>
 
 <script>
-import Projects from "../components/Projects"
+import Projects from "../components/Projects.vue"
 import swal from 'sweetalert'
   export default {
     name: 'HelloWorld',
@@ -141,9 +141,7 @@ import swal from 'sweetalert'
         swal("(661) 912-4085");
       }
     },
-    components:{
-      Projects
-    }
+    components:{ Projects }
   }
 </script>
 
