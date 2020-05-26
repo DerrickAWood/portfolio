@@ -11,7 +11,7 @@
     </div>
     <div class="row text-center">
       <div class="col-4 d-flex justify-content-center">
-            <div class="card hover" style="width: 18rem;">
+            <div @click="localReach()" class="card hover" style="width: 18rem;">
             <img src="https://images.pexels.com/photos/1250452/pexels-photo-1250452.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">Local Reach</h5>
@@ -50,6 +50,11 @@ export default {
   data() {
     return {};
   },
+  methods: {
+    localReach(){
+      window.open("https://localreach.herokuapp.com/#/")
+    }
+  }
 };
 </script>
 
@@ -63,7 +68,7 @@ export default {
 }
 
 .hover:hover{
-  transform: scale(1.3);
+  transform: scale(1.1);
   cursor: pointer;
 }
 </style>
