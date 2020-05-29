@@ -10,7 +10,7 @@
       </div>
     </div>
     <div class="row text-center">
-      <div class="col-4 d-flex justify-content-center">
+      <div class="col-md-6 d-flex justify-content-center">
             <div @click="localReach()" class="card hover" style="width: 18rem;">
             <img src="https://images.pexels.com/photos/1250452/pexels-photo-1250452.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" class="card-img-top" alt="...">
             <div class="card-body">
@@ -20,26 +20,21 @@
             </div>
           </div>
       </div>
-      <div class="col-4 d-flex justify-content-center">
-        <div class="card hover" style="width: 18rem;">
-            <img src="" class="card-img-top" alt="...">
+      <div class="col-md-6 d-flex justify-content-center">
+        <div @click="bugLogger()" class="card hover" style="width: 18rem;">
+            <img src="https://cdn.pixabay.com/photo/2016/03/31/21/59/bug-1296767_1280.png" class="card-img-top" alt="...">
             <div class="card-body">
-              <h5 class="card-title">Card title</h5>
+              <h5 class="card-title">Bug Logger</h5>
               <hr>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <p class="card-text">Bug Logger is designed to help you report and track bugs on an application. </p>
             </div>
           </div>
       </div>
-      <div class="col-4 d-flex justify-content-center">
-        <div class="card hover" style="width: 18rem;">
-            <img src="" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title"></h5>
-              <hr>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            </div>
-          </div>
-      </div>
+     
+
+     <!-- more projects here -->
+
+
     </div>
   </div>
 </template>
@@ -53,6 +48,9 @@ export default {
   methods: {
     localReach(){
       window.open("https://localreach.herokuapp.com/#/")
+    },
+    bugLogger(){
+      window.open("https://debug-logger.herokuapp.com/#/")
     }
   }
 };

@@ -11,8 +11,8 @@
       </div>
     <div class="row text-center">
 
-
-      <div class="col-4">
+      
+      <div class="col-md-4">
         <h2>Skills</h2>
         <div class="row justify-content-center">
         <i class="fab fa-html5 fa-4x m-1"></i>
@@ -30,9 +30,9 @@
       </div>
 
 
-      <div class="col-4">
+      <div class="col-md-4">
         <h1>About Me</h1>
-        <img class="my-Pic m-2" src="https://media-exp1.licdn.com/dms/image/C5603AQEAL1BjiwdP5w/profile-displayphoto-shrink_200_200/0?e=1594857600&v=beta&t=RmSFPjHn2IEmUO1-2Cdev19tSUD5yuYm-Ygv854AW5A">
+        <img class="my-Pic m-2" src="https://media-exp1.licdn.com/dms/image/C5603AQH9YPcg3BQ_5Q/profile-displayphoto-shrink_400_400/0?e=1596067200&v=beta&t=YSKAGqn6bNDsaxeXzfTzlMqe9YV1nzln3R1ysnMhAdo">
         
         <p class="subheading font-weight-regular m-3">
           A U.S. Army veteran & Full Stack Software Developer with a passion for solving problems and developing clean, modern software. Proficient with the most up to date software development tools and technologies. Proven leadership skills, hard working ethic, and a strong technical aptitude.
@@ -48,15 +48,15 @@
         </button>
             <div class="modal-content">
               
-          <img src="https://media-exp1.licdn.com/dms/image/C562DAQEd-6dLWBZAjQ/profile-treasury-document-cover-images_800/0?e=1590544800&v=beta&t=S2lcZgZxXnh8DrujffO-7-LWF6Y8ezqgbRRr0tL9Z1A" alt="">
+          <img src="https://media-exp1.licdn.com/dms/image/C562DAQEd-6dLWBZAjQ/profile-treasury-document-cover-images_800/0?e=1590634800&v=beta&t=ciXbO8TdXSs7mbFOXP_T9vMFxScfTtsrFjGA9xndiQs" alt="">
       
-    </div>
-  </div>
-</div>
+              </div>
+            </div>
+          </div>
         </h2>
       </div>
 
-      <div class="col-4">
+      <div class="col-md-4">
         <h2>Connect</h2>
         <img @click="linkedIn()" class="hover" src="https://img.icons8.com/officel/50/000000/linkedin.png"/>
         <img @click="gitHub()" class="hover" src="https://img.icons8.com/nolan/64/github.png"/>
@@ -156,6 +156,7 @@ import swal from 'sweetalert'
 
 .my-Pic{
   border-radius: 50%;
+  height: 25vh;
 }
 
 .hover:hover{

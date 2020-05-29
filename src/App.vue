@@ -2,15 +2,22 @@
 
 <template>
   <v-app>
-    <v-app-bar
-      app
-      color="dark"
-      dark
-    >
-       <v-btn class="mx-2 hover" fab dark color="teal">
-      <v-icon dark>mdi-format-list-bulleted-square</v-icon>
-    </v-btn>
-    </v-app-bar>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#">Welcome</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Connect<span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">See My Work</a>
+      </li>
+    </ul>
+  </div>
+</nav>
     <v-content>
       <HelloWorld/>
     </v-content>
