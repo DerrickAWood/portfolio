@@ -1,7 +1,7 @@
 <template>
-<div>
-      <div class="row no-gutters my-Dark d-flex justify-content-center bColor ">
-        <div class="col-6 align-self-center">
+<div class="font">
+      <div class="row no-gutters cover d-flex justify-content-center">
+        <div class="col-md-6 align-self-center">
           <div class="text-center my-auto text-white mb-5">
             <h1>Derrick Wood</h1>
             <hr class="white">
@@ -49,7 +49,7 @@
         </button>
             <div class="modal-content">
               
-               <img src="../assets/resume.jpg"/>
+               <img class="resume" src="../assets/resume.jpg"/>
       
               </div>
             </div>
@@ -147,6 +147,12 @@ import swal from 'sweetalert'
 </script>
 
 <style scoped>
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+.font {
+  font-family: 'Ubuntu', sans-serif;
+}
+
 .bColor{
   height: 70vh;
 }
@@ -155,9 +161,20 @@ import swal from 'sweetalert'
   background-color: #1e1e1e;
 }
 
+.cover{
+  background-image: url("https://images.unsplash.com/photo-1497032628192-86f99bcd76bc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80");
+  background-position: center;
+  height: 70vh;
+  background-size: cover;
+}
+
 .my-Pic{
   border-radius: 50%;
   height: 25vh;
+}
+
+.resume{
+  height: 95vh;
 }
 
 .hover:hover{
