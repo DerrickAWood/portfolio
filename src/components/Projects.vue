@@ -63,9 +63,6 @@ export default {
   font-family: 'Ubuntu', sans-serif;
 }
 
-.bColor{
-  /* height: 100vh; */
-}
 
 .my-Dark{
   background-color: #1e1e1e;
