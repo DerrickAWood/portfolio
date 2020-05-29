@@ -28,11 +28,12 @@
         </div>
         <i class="fab fa-github fa-4x m-1"></i>
       </div>
+      
 
 
       <div class="col-md-4">
         <h1>About Me</h1>
-        <img class="my-Pic m-2" src="https://media-exp1.licdn.com/dms/image/C5603AQH9YPcg3BQ_5Q/profile-displayphoto-shrink_400_400/0?e=1596067200&v=beta&t=YSKAGqn6bNDsaxeXzfTzlMqe9YV1nzln3R1ysnMhAdo">
+        <img class="my-Pic m-2" src="../assets/me.jpg"/>
         
         <p class="subheading font-weight-regular m-3">
           A U.S. Army veteran & Full Stack Software Developer with a passion for solving problems and developing clean, modern software. Proficient with the most up to date software development tools and technologies. Proven leadership skills, hard working ethic, and a strong technical aptitude.
@@ -48,7 +49,7 @@
         </button>
             <div class="modal-content">
               
-          <img src="https://media-exp1.licdn.com/dms/image/C562DAQEd-6dLWBZAjQ/profile-treasury-document-cover-images_800/0?e=1590634800&v=beta&t=ciXbO8TdXSs7mbFOXP_T9vMFxScfTtsrFjGA9xndiQs" alt="">
+               <img src="../assets/resume.jpg"/>
       
               </div>
             </div>
