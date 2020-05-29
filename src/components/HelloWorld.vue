@@ -3,9 +3,9 @@
       <div class="row no-gutters cover d-flex justify-content-center">
         <div class="col-md-6 align-self-center">
           <div class="text-center my-auto text-white mb-5">
-            <h1>Derrick Wood</h1>
+            <h1 class="intro">Derrick Wood</h1>
             <hr class="white">
-            <h1>Software Developer</h1>
+            <h1 class="intro">Software Developer</h1>
           </div>
         </div>
       </div>
@@ -31,7 +31,7 @@
       
 
 
-      <div class="col-md-4">
+      <div id="about-me" class="col-md-4">
         <h1>About Me</h1>
         <img class="my-Pic m-2" src="../assets/me.jpg"/>
         
@@ -49,7 +49,7 @@
         </button>
             <div class="modal-content">
               
-               <img class="resume" src="../assets/resume.jpg"/>
+               <img src="../assets/resume.jpg"/>
       
               </div>
             </div>
@@ -57,7 +57,7 @@
         </h2>
       </div>
 
-      <div class="col-md-4">
+      <div id="connect" class="col-md-4">
         <h2>Connect</h2>
         <img @click="linkedIn()" class="hover" src="https://img.icons8.com/officel/50/000000/linkedin.png"/>
         <img @click="gitHub()" class="hover" src="https://img.icons8.com/nolan/64/github.png"/>
@@ -173,8 +173,8 @@ import swal from 'sweetalert'
   height: 25vh;
 }
 
-.resume{
-  height: 95vh;
+.intro{
+  -webkit-text-stroke: 1.5px black;
 }
 
 .hover:hover{

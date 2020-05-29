@@ -1,6 +1,6 @@
 
 <template>
-  <div class="bColor my-Dark container-fluid">
+  <div id="projects" class="bColor my-Dark container-fluid font">
     <div class="row">
       <div class="col-12 text-center">
       <div class="text-center my-auto text-white">
@@ -22,7 +22,7 @@
       </div>
       <div class="col-md-6 d-flex justify-content-center">
         <div @click="bugLogger()" class="card hover" style="width: 18rem;">
-            <img src="https://cdn.pixabay.com/photo/2016/03/31/21/59/bug-1296767_1280.png" class="card-img-top" alt="...">
+            <img src="https://www.stockvault.net/data/2016/10/25/214456/preview16.jpg" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">Bug Logger</h5>
               <hr>
@@ -57,8 +57,14 @@ export default {
 </script>
 
 <style scoped>
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+.font {
+  font-family: 'Ubuntu', sans-serif;
+}
+
 .bColor{
-  height: 60vh;
+  /* height: 100vh; */
 }
 
 .my-Dark{
